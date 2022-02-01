@@ -370,197 +370,446 @@
 
 
 
-            <!-- product category starts -->
+<!--========================================== product Banner, category, Category View  Start ==========================================================-->
 
             <section class="main-content category-closed" id="main-content">
                <div class="container-fluid px-md-5 px-3 mt-3">
-                  <!--~~~~~~category page banner starts~~~~~~-->
-                  <div class="category01--banner">
+                <!-- Categtory Top Banner Start -->
+                  <div class="category01_banner">
                      <div class="row">
-                        <div class="col-lg-6 col-md-6 com-sm-12">
-                           <div class="subcat_banner_img h-100">
-                              <div class="wrap_left h-100">
-                                 <img src="../assets/images/category/sub-cat/image 169.png" alt=""
-                                    class="img-fluid w-100 h-100">
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 com-sm-12">
-                           <div class="subcat_banner_img h-100">
-                              <div class="wrap_right h-100">
-                                 <img src="../assets/images/category/sub-cat/image 170.png" alt="" height="100px"
-                                    class="img-fluid w-100 h-100">
-                              </div>
+                        <div class="col-lg-12 col-md-6 com-sm-12">
+                           <div class="subcat_banner_img">
+                                 <img src="../assets/images/category/sub-cat/Rectangle 22.png" alt="">
+                                 <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium id debitis quam doloremque repudiandae aliquam repellendus!
+                                 </p>
+                                 <div class="price_sticker">
+                                    <div class="sticker_content">
+                                       <p class="price">&#2547; 2,000.0</p>
+                                    <p class="price_text">Onward</p>
+                                    </div>
+                                 </div>
                            </div>
                         </div>
                      </div>
                   </div>
-
-
-
+                  <!-- Categtory Top Banner End -->
 
                   <!-- product category starts -->
-                  <section class="product--category">
+                  <section class="product_category">
                      <div class="container-fluid">
-
-                        <!-- breadcrumb start -->
-                        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                           <ol class="breadcrumb category-breadcrumb">
-                              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                              <li class="breadcrumb-item"><a href="category.html">Food</a></li>
-                              <li class="breadcrumb-item active" aria-current="page">Meat and Fish</li>
-                           </ol>
-                        </nav>
-                        <!-- breadcrumb end -->
-
-
-                        <!-- ~~~~filter button starts~~~~~ -->
-                        <section class="filter--section mt-5 mb-3">
-                           <div class="container-fluid">
-                              <div class="row">
-                                 <div class="col-md-6">
-                                    <div class="filter--contain">
-                                       <button class="filter--button" onclick="categoryFilterToggle()" id="myBtn">
-                                          <i class="fas fa-filter"></i>
-                                          <span>Filters</span>
-                                          <i class="fas fa-caret-down"></i>
-                                       </button>
-                                       <span id="dots"></span>
-                                    </div>
-                                 </div>
-                                 <div class="col-md-6 sortby--dropdown">
-                                    <select class="form-select form-select" aria-label=".form-select-lg example">
-                                       <option selected>Sort by:</option>
-                                       <option value="1">Oldest</option>
-                                       <option value="1">Newest</option>
-                                       <option value="1">Price: Low to High</option>
-                                       <option value="1">Price:High to Low</option>
-                                       <option value="1">Name: A-Z</option>
-                                       <option value="1">Name: Z-A</option>
-                                       <option value="2">Rating: Low to High</option>
-                                       <option value="2">Rating: High to Low</option>
-                                    </select>
-                                 </div>
-                              </div>
-                              <form action="">
-                                 <div class="filter-options my-4 p-2 p-md-5" id="more">
-
-                                    <div class="row">
-                                       <div class="col-md-4 d-flex justify-content-center">
-                                          <div>
-                                             <h6>By Categories</h6>
-                                             <ul>
-                                                <li><input type="checkbox"> Men</li>
-                                                <li><input type="checkbox"> Women</li>
-                                                <li><input type="checkbox"> Kids</li>
-                                                <li><input type="checkbox"> Accessories</li>
-                                                <li><input type="checkbox"> Winter Collection</li>
-                                                <li><input type="checkbox"> Brands</li>
-                                             </ul>
-                                          </div>
-                                       </div>
-                                       <div class="col-md-4 d-flex justify-content-center">
-                                          <div>
-                                             <h6>By Brands</h6>
-                                             <ul>
-                                                <li><input type="checkbox"> Aarong</li>
-                                                <li><input type="checkbox"> Gentle Park</li>
-                                                <li><input type="checkbox"> Kay Kraft</li>
-                                                <li><input type="checkbox"> Dorhibari</li>
-                                                <li><input type="checkbox"> Cat's Eye</li>
-                                                <li><input type="checkbox"> Anjan's</li>
-                                             </ul>
-                                          </div>
-                                       </div>
-                                       <div class="col-md-4 d-flex justify-content-center">
-                                          <div data-role="page">
-                                             <div data-role="header">
-                                                <h6>By Price</h6>
-                                             </div>
-                                             <div class="range-slider">
-
-                                                <input value="1000" min="1000" max="50000" step="500" type="range">
-                                                <input value="50000" min="1000" max="50000" step="500" type="range">
-
-                                                <div class="pt-3">
-                                                   <span>Range: </span><span class="rangeValues"></span>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-
-
-
-
-                                    <div class="mt-3">
-                                       <button class="btn btn-primary-filled px-4">
-                                          <i class="fas fa-filter text-white"></i>
-                                          Filter
-                                       </button>
-                                       <button type="reset" class="btn btn-primary-transparent-primary-text px-4 ms-2">
-                                          <i class="fas fa-sync-alt"></i>
-                                          Clear All Filters
-                                       </button>                                       
-                                    </div>
-                                 </div>
-                              </form>
-                           </div>
-                        </section>
-                        <!-- ~~~~filter button ends~~~~~ -->
-
-
-
                         <!-- product ietm starts  -->
                         <div class="product_items">
-                           <div class="ec-card-group">
-                              <div class="ec-card-lg">
-                                 <a href="./sub-sub-category.html">
-                                    <div class="ec-card-inner">
-                                       <img class="img-fluid" src="../assets/images/category/sub-cat/image165.png"
-                                          alt="">
-                                       <p>Meat</p>
-                                    </div>
-                                 </a>
+                           <div class="product_items_title">
+                              <div class="row">
+                                    <p>living room</p> 
                               </div>
+                           </div>
 
-                              <div class="ec-card-lg">
-                                 <a href="./sub-sub-category.html">
-                                    <div class="ec-card-inner">
-                                       <img class="img-fluid" src="../assets/images/category/sub-cat/image166.png"
-                                          alt="">
-                                       <p>Frozen Fish</p>
-                                    </div>
-                                 </a>
+                           <div class="ec-card-group">
+                              <div class="ec_card_top">
+                                 <div class="ec-card-lg">
+                                    <a href="./sub-sub-category.html">
+                                       <div class="ec-card-inner">
+                                          <img class="img-fluid" src="../assets/images/category/sub-cat/Rectangle 8.png"
+                                             alt="">
+                                          <p>Sofas</p>
+                                       </div>
+                                    </a>
+                                 </div>
+   
+                                 <div class="ec-card-lg">
+                                    <a href="./sub-sub-category.html">
+                                       <div class="ec-card-inner">
+                                          <img class="img-fluid" src="../assets/images/category/sub-cat/Rectangle 8-1.png"
+                                             alt="">
+                                          <p>Neck Table</p>
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="ec-card-lg">
+                                    <a href="./sub-sub-category.html">
+                                       <div class="ec-card-inner">
+                                          <img class="img-fluid" src="../assets/images/category/sub-cat/Rectangle 8-2.png"
+                                             alt="">
+                                          <p>Coffee Table</p>
+                                       </div>
+                                    </a>
+                                 </div>
                               </div>
-                              <div class="ec-card-lg">
-                                 <a href="./sub-sub-category.html">
-                                    <div class="ec-card-inner">
-                                       <img class="img-fluid" src="../assets/images/category/sub-cat/image167.png"
-                                          alt="">
-                                       <p>Dried Fish</p>
-                                    </div>
-                                 </a>
+                              <div class="ec_card_bottom">
+                                 <div class="ec-card-lg">
+                                    <a href="./sub-sub-category.html">
+                                       <div class="ec-card-inner">
+                                          <img class="img-fluid" src="../assets/images/category/sub-cat/Rectangle 8-3.png"
+                                             alt="">
+                                          <p>Rugs</p>
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="ec-card-lg">
+                                    <a href="./sub-sub-category.html">
+                                       <div class="ec-card-inner">
+                                          <img class="img-fluid" src="../assets/images/category/sub-cat/Rectangle 8-4.png"
+                                             alt="">
+                                          <p>Combo Sets</p>
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="ec-card-lg">
+                                    <a href="./sub-sub-category.html">
+                                       <div class="ec-card-inner">
+                                          <img class="img-fluid" src="../assets/images/category/sub-cat/Rectangle 8-5.png"
+                                             alt="">
+                                          <p>Decor</p>
+                                       </div>
+                                    </a>
+                                 </div>
                               </div>
-                              <div class="ec-card-lg">
-                                 <a href="./sub-sub-category.html">
-                                    <div class="ec-card-inner">
-                                       <img class="img-fluid" src="../assets/images/category/sub-cat/image168.png"
-                                          alt="">
-                                       <p>Tofu</p>
-                                    </div>
-                                 </a>
-                              </div>
+                              
                            </div>
                         </div>
                      </div>
                      <!-- product ietm edns  -->
                      <!-- end product--category--items--inner  -->
                   </section>
+
+                  <section class="product_item_feature">
+                     <div class="row">
+                        <h1>
+                           Living Room Ideas
+                        </h1>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                           <img src="../assets/images/category/sub-cat/Media.png" alt="">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                           <h2>feature that is amazing</h2>
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quas quasi veritatis eaque, animi asperiores!</p>
+                           <ul>
+                              <li><span><i class="far fa-dot-circle"></i> Benefit of Feature</span></li>
+                              <li><span><i class="far fa-dot-circle"></i> Benefit of Feature</span></li>
+                              <li><span><i class="far fa-dot-circle"></i> Benefit of Feature</span></li>
+
+                           </ul>
+                        </div>
+                     </div>
+                  </section>
+
+                  <section class="most_popular_slider">
+                     <h2> most popular </h2>
+                     <div class="slide-4">
+                        <div class="discounted-product-card-wrapper">
+                           <div class="discounted-product-card">
+                              <div class="discounted-product-card-inner">
+                                 <div class="image-overlay-container">
+                                    <img src="../assets/images/category/sub-cat/Slider/Rectangle 14.png"
+                                       alt="portfolio-image">
+                                 </div>
+                                 <div class="my-3 px-3">
+                                    <h4 class="text-dark fw-bold">Mid-Century Chair</h4>
+                                    <div class="rating my-2">
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <span class="text-dark fw-bold">(14)</span>
+                                    </div>
+                                    
+                                    <div class="d-flex justify-content-between my-2">
+                                       <h6 class="primary2-text">TK. 210.0 <span class="text-muted"><s>TK.
+                                                300.0</s></span>
+                                       </h6>
+                                    </div>
+                                 </div>
+                              </div>
+
+                           </div>
+                        </div>
+                        <div class="discounted-product-card-wrapper">
+                           <div class="discounted-product-card">
+                              <div class="discounted-product-card-inner">
+                                 <div class="image-overlay-container">
+                                    <img src="../assets/images/category/sub-cat/Slider/Rectangle 15.png"
+                                       alt="portfolio-image">
+                                 </div>
+                                 <div class="my-3 px-3">
+                                    <h4 class="text-dark fw-bold">3-Seater sofa set</h4>
+                                    <div class="rating my-2">
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <span class="text-dark fw-bold">(14)</span>
+                                    </div>
+                                    
+                                 
+                                    <div class="d-flex justify-content-between my-2">
+                                       <h6 class="primary2-text">TK. 210.0 <span class="text-muted"><s>TK.
+                                                300.0</s></span>
+                                       </h6>
+                                    </div>
+                                 </div>
+                              </div>
+
+                           </div>
+                        </div>
+                        <div class="discounted-product-card-wrapper">
+                           <div class="discounted-product-card">
+                              <div class="discounted-product-card-inner">
+                                 <div class="image-overlay-container">
+                                    <img src="../assets/images/category/sub-cat/Slider/Rectangle 16.png"
+                                       alt="portfolio-image">
+                                 </div>
+                                 <div class="my-3 px-3">
+                                    <h4 class="text-dark fw-bold">Green Dresser</h4>
+                                    <div class="rating my-2">
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <span class="text-dark fw-bold">(14)</span>
+                                    </div>
+                                 
+                                    <div class="d-flex justify-content-between my-2">
+                                       <h6 class="primary2-text">TK. 210.0 <span class="text-muted"><s>TK.
+                                                300.0</s></span>
+                                       </h6>
+                                    </div>
+                                 </div>
+                              </div>
+
+                           </div>
+                        </div>
+                        <div class="discounted-product-card-wrapper">
+                           <div class="discounted-product-card">
+                              <div class="discounted-product-card-inner">
+                                 <div class="image-overlay-container">
+                                    <img src="../assets/images/category/sub-cat/Slider/Rectangle 17.png"
+                                       alt="portfolio-image">
+                                 </div>
+                                 <div class="my-3 px-3">
+                                    <h4 class="text-dark fw-bold">Expandable Recliners</h4>
+                                    <div class="rating my-2">
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <span class="text-dark fw-bold">(14)</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between my-2">
+                                       <h6 class="primary2-text">TK. 210.0 <span class="text-muted"><s>TK.
+                                                300.0</s></span>
+                                       </h6>
+                                    </div>
+                                 </div>
+                              </div>
+
+                           </div>
+                        </div>
+                        <div class="discounted-product-card-wrapper">
+                           <div class="discounted-product-card">
+                              <div class="discounted-product-card-inner">
+                                 <div class="image-overlay-container">
+                                    <img src="../assets/images/category/sub-cat/Slider/Rectangle 14.png"
+                                       alt="portfolio-image">
+                                 </div>
+                                 <div class="my-3 px-3">
+                                    <h4 class="text-dark fw-bold">Mid-Century Chair</h4>
+                                    <div class="rating my-2">
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <span class="text-dark fw-bold">(14)</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between my-2">
+                                       <h6 class="primary2-text">TK. 210.0 <span class="text-muted"><s>TK.
+                                                300.0</s></span>
+                                       </h6>
+                                    </div>
+                                 </div>
+                              </div>
+
+                           </div>
+                        </div>
+                        <div class="discounted-product-card-wrapper">
+                           <div class="discounted-product-card">
+                              <div class="discounted-product-card-inner">
+                                 <div class="image-overlay-container">
+                                    <img src="../assets/images/category/sub-cat/Slider/Rectangle 14.png"
+                                       alt="portfolio-image">
+                                 </div>
+                                 <div class="my-3 px-3">
+                                    <h4 class="text-dark fw-bold">Mid-Century Chair</h4>
+                                    <div class="rating my-2">
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <span class="text-dark fw-bold">(14)</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between my-2">
+                                       <h6 class="primary2-text">TK. 210.0 <span class="text-muted"><s>TK.
+                                                300.0</s></span>
+                                       </h6>
+                                    </div>
+                                 </div>
+                              </div>
+
+                           </div>
+                        </div>
+                        <div class="discounted-product-card-wrapper">
+                           <div class="discounted-product-card">
+                              <div class="discounted-product-card-inner">
+                                 <div class="image-overlay-container">
+                                    <img src="../assets/images/category/sub-cat/Slider/Rectangle 14.png"
+                                       alt="portfolio-image">
+                                 </div>
+                                 <div class="my-3 px-3">
+                                    <h4 class="text-dark fw-bold">Mid-Century Chair</h4>
+                                    <div class="rating my-2">
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <span class="text-dark fw-bold">(14)</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between my-2">
+                                       <h6 class="primary2-text">TK. 210.0 <span class="text-muted"><s>TK.
+                                                300.0</s></span>
+                                       </h6>
+                                    </div>
+                                 </div>
+                              </div>
+
+                           </div>
+                        </div>
+                        <div class="discounted-product-card-wrapper">
+                           <div class="discounted-product-card">
+                              <div class="discounted-product-card-inner">
+                                 <div class="image-overlay-container">
+                                    <img src="../assets/images/category/sub-cat/Slider/Rectangle 14.png"
+                                       alt="portfolio-image">
+                                 </div>
+                                 <div class="my-3 px-3">
+                                    <h4 class="text-dark fw-bold">Mid-Century Chair</h4>
+                                    <div class="rating my-2">
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <span class="text-dark fw-bold">(14)</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between my-2">
+                                       <h6 class="primary2-text">TK. 210.0 <span class="text-muted"><s>TK.
+                                                300.0</s></span>
+                                       </h6>
+                                    </div>
+                                 </div>
+                              </div>
+
+                           </div>
+                        </div>
+                        <div class="discounted-product-card-wrapper">
+                           <div class="discounted-product-card">
+                              <div class="discounted-product-card-inner">
+                                 <div class="image-overlay-container">
+                                    <img src="../assets/images/category/sub-cat/Slider/Rectangle 14.png"
+                                       alt="portfolio-image">
+                                 </div>
+                                 <div class="my-3 px-3">
+                                    <h4 class="text-dark fw-bold">Mid-Century Chair</h4>
+                                    <div class="rating my-2">
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <span class="text-dark fw-bold">(14)</span>
+                                    </div>
+                                 
+                                    <div class="d-flex justify-content-between my-2">
+                                       <h6 class="primary2-text">TK. 210.0 <span class="text-muted"><s>TK.
+                                                300.0</s></span>
+                                       </h6>
+                                    </div>
+                                 </div>
+                              </div>
+
+                           </div>
+                        </div>
+                        <div class="discounted-product-card-wrapper">
+                           <div class="discounted-product-card">
+                              <div class="discounted-product-card-inner">
+                                 <div class="image-overlay-container">
+                                    <img src="../assets/images/category/sub-cat/Slider/Rectangle 14.png"
+                                       alt="portfolio-image">
+                                 </div>
+                                 <div class="my-3 px-3">
+                                    <h4 class="text-dark fw-bold">Mid-Century Chair</h4>
+                                    <div class="rating my-2">
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <span class="text-dark fw-bold">(14)</span>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between my-2">
+                                       <h6 class="primary2-text">TK. 210.0 <span class="text-muted"><s>TK.
+                                                300.0</s></span>
+                                       </h6>
+                                    </div>
+                                 </div>
+                              </div>
+
+                           </div>
+                        </div>
+                        <div class="discounted-product-card-wrapper">
+                           <div class="discounted-product-card">
+                              <div class="discounted-product-card-inner">
+                                 <div class="image-overlay-container">
+                                    <img src="../assets/images/category/sub-cat/Slider/Rectangle 15.png"
+                                       alt="portfolio-image">
+                                 </div>
+                                 <div class="my-3 px-3">
+                                    <h4 class="text-dark fw-bold">Mid-Century Chair</h4>
+                                    <div class="rating my-2">
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <i class="fas fa-star"></i>
+                                       <span class="text-dark fw-bold">(14)</span>
+                                    </div>
+                                    
+                                    <div class="d-flex justify-content-between my-2">
+                                       <h6 class="primary2-text">TK. 210.0 <span class="text-muted"><s>TK.
+                                                300.0</s></span>
+                                       </h6>
+                                    </div>
+                                 </div>
+                              </div>
+
+                           </div>
+                        </div>
+                     
+
+                     </div>
+                  </section>
                </div>
             </section>
          </div>
-
+<!--========================================== product Banner, category, Category View  End ==========================================================-->
 
 
 
