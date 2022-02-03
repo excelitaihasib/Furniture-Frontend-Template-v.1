@@ -566,8 +566,9 @@ button:focus {
 .bg-light {
   background-color: rgba(65, 80, 181, 0.05) !important; }
 
-.b-g-light {
-  background-color: #f9f9f9; }
+/* .b-g-light {
+  background-color: #f9f9f9;
+ } */
 
 .no-arrow > .slick-next,
 .no-arrow > .slick-prev {
@@ -635,7 +636,9 @@ button:focus {
   margin-bottom: 0; }
 
 .txt-default {
-  color: #3DC73C; }
+  color: var(--primary);
+  font-weight:bold; 
+}
 
 .bg-light0 {
   background-color: #f1e7e6; }
@@ -813,7 +816,7 @@ button {
   padding: 18px 45px;
   font-weight: 700;
   color: #ffffff !important;
-  background-color: #3DC73C;
+  background-color: var(--primary);
   position: relative;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -2580,10 +2583,12 @@ button {
   .collection-banner .collection-banner-main.banner-style7 .collection-banner-contain {
     padding: 25px; }
     .collection-banner .collection-banner-main.banner-style7 .collection-banner-contain h3 {
-      font-size: calc(16px + (23 - 16) * ((100vw - 320px) / (1920 - 320)));
-      letter-spacing: 1px;
-      font-weight: 400;
-      font-family: "Days One", sans-serif;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 28px;
+      color: #fff;
       text-transform: capitalize;
       margin-bottom: 11px; }
     .collection-banner .collection-banner-main.banner-style7 .collection-banner-contain h4 {
@@ -2595,6 +2600,16 @@ button {
       margin-bottom: 14px; }
   .collection-banner .collection-banner-main.banner-style8 .collection-banner-contain {
     padding: 25px; }
+    .collection-banner .collection-banner-main.banner-style7 .collection-banner-contain p{
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 21px;
+      text-transform: uppercase;
+      letter-spacing:4px;
+      color: #fff;
+    }
     .collection-banner .collection-banner-main.banner-style8 .collection-banner-contain h3 {
       font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1920 - 320)));
       letter-spacing: 1px;
@@ -2613,6 +2628,10 @@ button {
       background-color: #ffffff;
       color: #3DC73C !important; }
   .collection-banner .collection-banner-main.collection-13 .collection-img {
+    background:linear-gradient(#0007,#0007);
+    height: 513px; }
+      .collection-banner .collection-banner-main.collection-13 .collection-img  img{
+    background:linear-gradient(#0007,#0007);
     height: 513px; }
   .collection-banner .collection-banner-main:after {
     position: absolute;
@@ -7857,13 +7876,23 @@ background: black;
   padding-left: 40px;
   padding-right: 40px; }
   .megastore-slide .slide-main .slide-contain h4 {
-    font-size: calc(18px + (23 - 18) * ((100vw - 320px) / (1920 - 320)));
+    /* font-size: calc(18px + (23 - 18) * ((100vw - 320px) / (1920 - 320)));
     letter-spacing: 1px;
-    color: #3DC73C;
-    font-weight: 700;
+    color: #fff;
+    font-weight: 700; */
     font-family: "Roboto", sans-serif;
     text-transform: capitalize;
-    margin-bottom: 11px; }
+    margin-bottom: 11px;
+  
+  font-weight: 800;
+font-size: 48px;
+line-height: 56px;
+text-transform: uppercase;
+
+color: #FFFFFF;
+  
+  
+  }
   .megastore-slide .slide-main .slide-contain h2 {
     font-size: calc(28px + (55 - 28) * ((100vw - 320px) / (1920 - 320)));
     letter-spacing: 2px;
@@ -19459,8 +19488,11 @@ body.rtl {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto; }
-  .container {
-    max-width: 1110px; } }
+  /* .container {
+    max-width: 1110px; } 
+     */
+  
+  }
 
 @media (max-width: 1679px) {
   .category-header .navbar-menu .category-right .contact-block span {
