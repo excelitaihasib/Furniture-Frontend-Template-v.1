@@ -361,13 +361,23 @@
             <div class="col-lg-12 col-md-12 col-sm-12 px-md-5 px-3">
                <div class="checkout-header-wrap">
                   <div class="checkout-header">
-                     <h4>Checkout</h4>
+                     <!-- <h4>Checkout</h4> -->
                      <div class="checkout-subhead">
                         <a href="#" class="">Home &#8250;</a>
-                        <a href="#" class="">Cart &#8250;</a>
-                        <a href="#" class=""> Checkout</a>
+                        <a href="#" class="">Cart</a>
+                        <!-- <a href="#" class=""> Checkout</a> -->
                      </div>
                      <!-- end whishlist-subhead  -->
+
+                     <div class="checkout-code-innr">
+                        <p><i class="fas fa-tag"></i> Have a coupon? <span>Click here to enter your code</span></p>
+                     </div>
+                     <!-- end checkout-code-innr  -->
+
+                     <div class="checkout-main-bd">
+                        <span><i class="fas fa-clipboard-list"></i></span>
+                     </div>
+                     <!-- end checkout-main-bd  -->
                   </div>
                   <!-- end checkout-header  -->
                </div>
@@ -430,14 +440,14 @@
                                     </div>
                                     <!-- end col  -->
                                     <div class="col-sm-12">
-                                       <div class="form-check">
-                                          <input class="form-check-input " type="checkbox" id="gridCheck">
-                                          <label class="form-check-label " for="gridCheck">
-                                             Create An Account?
-                                          </label>
+                                       <div class="checkout-add-info">
+                                          <h4>Additional Information</h4>
+
+                                          <label for="">Order notes (optional)</label>
+
+                                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
 
                                        </div>
-                                       <!-- end form-check  -->
                                     </div>
 
 
@@ -453,7 +463,8 @@
 
                      <div class="col-lg-6 col-sm-12">
                         <div class="checkout-form-wrap">
-                           <div class="checkout-form-inner">
+                           <div class="checkout-form-inner checkout-form-inner2">
+                              <h4>Your Order</h4>
                               <div class="checkout-product-info">
                                  <div class="checkout-product-header">
                                     <h5> Product</h5>
@@ -463,13 +474,8 @@
 
                                  <div class="checkout-product-inner-cont">
                                     <div class="checkout-product-cont">
-                                       <p> White T-shirt * 1</p>
-                                       <p>&#2547; 2,000.0</p>
-                                    </div>
-                                    <!-- end checkout-product-cont-->
-                                    <div class="checkout-product-cont">
-                                       <p> Black jeans * 1</p>
-                                       <p>&#2547; 2,000.0</p>
+                                       <p> Expedita Distinctio Rerum × 1</p>
+                                       <p>&#2547; 20,000</p>
                                     </div>
                                     <!-- end checkout-product-cont-->
                                  </div>
@@ -478,81 +484,53 @@
                                  <div class="checkout-product-inner-cont">
                                     <div class="checkout-product-cont">
                                        <p> Sub Total</p>
-                                       <p class="total-clr">&#2547; 4,000.0</p>
+                                       <p class="total-clr">&#2547; 20,000</p>
                                     </div>
                                     <!-- end checkout-product-cont-->
-                                    <div class="checkout-product-cont">
-                                       <p> Shipping</p>
-                                       <div class="checkbox-checkout">
-                                          <div class="form-group">
-                                             <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="gridCheck">
-                                                <label class="form-check-label" for="gridCheck">
-                                                   Free Shipping
-                                                </label>
-
-                                             </div>
-                                             <!-- end form-check  -->
-                                             <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="gridCheck">
-                                                <label class="form-check-label" for="gridCheck">
-                                                   Local Pickup
-                                                </label>
-
-                                             </div>
-                                             <!-- end form-check  -->
-
-                                          </div>
-                                          <!-- end form-group  -->
-
-                                       </div>
-
-                                    </div>
+                                  
+                                 </div>
+                                 <!-- end checkout-product-cont-->
+                                 <div class="checkout-product-cont che-pro-cont">
+                                    <p> Total</p>
+                                    <p class="total-clr">&#2547; 20,000</p>
                                  </div>
                                  <!-- end checkout-product-cont-->
 
-
-                                 <div class="checkout-total-radio">
-                                    <div class="checkout-product-cont">
-                                       <p> Total</p>
-                                       <p class="total-clr">&#2547; 4,000.0</p>
+                                 <div class="col-12">
+                                    <div class="form-check">
+                                       <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                       <label class="form-check-label" for="flexRadioDefault1">
+                                          Direct bank transfer
+                                       </label>
+                                       <p class="che-pro-cont-p">Make your payment directly into our bank account. Please use your Order ID as the payment
+                                          reference. Your order will not
+                                          be shipped until the funds have cleared in our account.</p>
                                     </div>
-                                    <!-- end checkout-product-cont-->
-
-                                    <div class="form-group">
-                                       <div class="form-check">
-                                          <input name="payment" class="form-check-input" type="radio" id="gridCheck">
-                                          <label class="form-check-label" for="gridCheck">
-                                             Check Payment
-                                          </label>
-
-                                       </div>
-                                       <!-- end form-check  -->
-                                       <div class="form-check">
-                                          <input name="payment" class="form-check-input" type="radio" id="gridCheck">
-                                          <label class="form-check-label" for="gridCheck">
-                                             Cash On Delivery
-                                          </label>
-
-                                       </div>
-                                       <!-- end form-check  -->
-                                       <div class="form-check">
-                                          <input name="payment" class="form-check-input" type="radio" id="gridCheck">
-                                          <label class="form-check-label" for="gridCheck">
-                                             Credit Cards
-                                          </label>
-
-                                       </div>
-                                       <!-- end form-check  -->
-
-
-
+                                    <div class="form-check">
+                                       <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                       <label class="form-check-label" for="flexRadioDefault1">
+                                          Check payments
+                                       </label>
                                     </div>
-                                    <!-- end form-group  -->
-
-
+                                    <div class="form-check">
+                                       <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                       <label class="form-check-label" for="flexRadioDefault1">
+                                          Cash on delivery
+                                       </label>
+                                    </div>
+                                    <p class="che-p">
+                                       Your personal data will be used to process your order, support your experience throughout this website, and for other
+                                       purposes described in our privacy policy.
+                                    </p>
+                                   
                                  </div>
-                                 <!-- end checkout-total-radio  -->
+
+                                 <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                       I have read and agree to the website <span>terms and conditions *</span>
+                                    </label>
+                                 </div>
 
                                  <div class="checkout-button-holder">
                                     <button type="button" class="btn order-btn" data-bs-toggle="modal"

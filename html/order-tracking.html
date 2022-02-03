@@ -372,59 +372,37 @@
             </div>
             <!-- end checkout-header-wrap  -->
 
-            <div class="checkout-wrapper">
-               <div class="row">
-                  <div class="col-12">
-                     <div class="payment-succ-inner">
-                        <div class="payment-succ">
-                           <span class=""><i class="fas fa-check-circle"></i></span>
-                           <h4>Thank you ! Payment successful </h4>
-                        </div>
-                        <!-- end payment-succ  -->
+
+
+            <div class=" card order-tracking-box">
+               <p>To track your order please enter your Order ID in the box below and press the "Track" button. This was given to you on
+               your receipt and in the confirmation email you should have received.</p>
+
+
+               <form action="">
+                 <div class="row">
+                     <div class="col-lg-6 col-sm-12">
+                        <label for="exampleInputEmail1" class="form-label">Order ID</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Found in your order confirmation email.">
                      </div>
-                     <!-- end payment-succ-inner  -->
-                     <div class="modal-body payment-stage-modal-body">
-                        <div class="payment-stage-inner">
-                           <div class="payment-stage">
-                              <ul class="payment-stages">
-                                 <li class="payment-stage-list">
-                                    <span class="progress-circle active"></span>
-                                    <h6 class="order-stage-text">Order Pending</h6>
-                                 </li>
-                                 <!-- end payment-stage-list  -->
-                                 <li class="payment-stage-list">
-                                    <span class="progress-circle"></span>
-                                    <h6 class="order-stage-text">Order Confirmed</h6>
-                                 </li>
-                                 <!-- end payment-stage-list  -->
-                                 <li class="payment-stage-list">
-                                    <span class="progress-circle"></span>
-                                    <h6 class="order-stage-text">Order Processing</h6>
-                                 </li>
-                                 <!-- end payment-stage-list  -->
-                                 <li class="payment-stage-list">
-                                    <span class="progress-circle"></span>
-                                    <h6 class="order-stage-text">Order Cancel</h6>
-                                 </li>
-                                 <!-- end payment-stage-list  -->
-                                 <li class="payment-stage-list">
-                                    <span class=""></span>
-                                    <h6 class="order-stage-text">Order Delivery</h6>
-                                 </li>
-                                 <!-- end payment-stage-list  -->
-                              </ul>
-                              <!-- end payment-stages  -->
-                           </div>
-                           <!-- end  payment-stage  -->
-                        </div>
-                        <!-- end payment-stage-inner  -->
+                     <!-- end col  -->
+                     <div class="col-lg-6 col-sm-12">
+                        <label for="exampleInputEmail1" class="form-label">Billing Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email you used during checkout.">
                      </div>
-                     <!-- end modal-body  -->
-                  </div>
-               </div>
-               <!-- end col  -->
+                     <!-- end col  -->
+                 </div>
+                 <div class="button-holder">
+                    <a href="#" class="track-btn">Track Order</a>
+                 </div>
+                 <!-- end button-holder  -->
+               </form>
+               <!-- end form  -->
             </div>
-            <!-- end row  -->
+            <!-- end order-tracking-box  -->
+
+           
+            <!-- end container-fluid  -->
          </div>
       </section>
 
