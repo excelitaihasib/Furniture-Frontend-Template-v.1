@@ -20,6 +20,7 @@ body {
     font-weight: 500;
     font-size: 30px;
     color: var(--dark-primary);
+    margin-bottom: 20px;
 }
 
 .btn-primary-filled {
@@ -1018,6 +1019,36 @@ padding: 8px 20px;
 
 }
 
+@media(max-width:768px){
+    .featured-category-item img{
+        width: 100px;
+        height: 100px;
+    }
+    .featured-category-item .category-btn{
+            padding: 8px 10px;
+            font-size: 12px;
+
+    }
+}
+
+@media(max-width:375px){
+    .featured-category .slick-prev,
+.featured-category .slick-next {
+    position: absolute;
+    top: -20px;
+    background-color: rgb(207, 207, 207);
+    border-radius: 40px;
+    height: 40px;
+    width: 40px;
+}
+.slick-prev:before {
+    font-family: "Font Awesome 6 Free";
+    font-size: 20px;
+    font-weight: 900;
+    content: "\f053";
+}
+
+}
 /* ----------------  Home Product Category  ---------------- */
 .section-padding{
     padding: 80px 50px;
@@ -1242,10 +1273,34 @@ margin-bottom: 20px;
 .card-innr{
     border-radius: 10px;
     position: relative;
-    margin:  15px 0;
+    margin:  15px 8px;
 }
+
+
+
+}
+
+
+
+@media(max-width:375px){
     
+.overly-icon a{
+    background: #fff;
+    border-radius: 50%;
+    padding: 8px 20px;          
 }
+
+
+.overly-icon a{
+    background: #fff;
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 50%;
+    padding: 6px 12px;          
+}
+}
+
 
 
 /* ---------------- Product Banner [product-banner-section] ---------------- */
@@ -1641,7 +1696,44 @@ color: #000000;
     font-size: 26px;
     line-height: 38px; 
 }
+ .ideas-img-innr img{
+        width: 300px;
+        height: 300px;
+    }
+
+
 }
+
+
+@media(max-width:420px){
+ .ideas-img-innr img{
+        width: 330px;
+        height: 300px;
+    }
+
+
+}
+@media(max-width:375px){
+ .ideas-img-innr img{
+        width: 260px;
+        height: 260px;
+    }
+
+
+}
+
+
+@media(max-width:320px){
+ .ideas-img-innr img{
+        width: 240px;
+        height: 240px;
+    }
+
+
+}
+
+
+
 /* ---------------- Blog Section ---------------- */
 
 .blog-section .blog-header h2{
@@ -1678,12 +1770,9 @@ font-style: normal;
 font-weight: 800;
 font-size: 28px;
 line-height: 33px;
-/* identical to box height */
-
 display: flex;
 align-items: center;
 text-transform: capitalize;
-
 color: #000000;
 margin-bottom: 15px;
 }
@@ -1694,7 +1783,6 @@ font-family: Roboto;
 font-size: 15px;
 line-height: 25px;
 text-transform: capitalize;
-
 color: #000000;
 margin-bottom: 15px;
 }
@@ -1757,7 +1845,7 @@ font-size: 14px;
 }
 @media(max-width:480px){
  .blog-section .blog-wrap .blog-img img{
-    width: 347px;
+    width: 300px;
 }
 
 
@@ -1775,17 +1863,25 @@ font-size: 16px;
 font-size: 18px;
 
 }
+.blog-section .card-innr{
+    width: 400px;
+    margin: 0;
+}
+   
+.blog-section .card-innr img{
+    width: 400px;
+}
 }
 
 @media(max-width:360px){
  .blog-section .blog-wrap .blog-img img{
-    width: 300px;
+    width: 257px;
 }
 }
 /* ---------------- Sale Section ---------------- */
 
 .sale-section{
-    padding: 80px 0;
+padding-top: 80px;
     
 }
 
