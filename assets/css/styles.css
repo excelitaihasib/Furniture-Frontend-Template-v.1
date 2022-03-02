@@ -4617,6 +4617,254 @@ input[type=range]:focus::-ms-fill-upper {
     color: white;
 }
 
+.btn-close-design{
+    float: right;
+    border-radius: 50%;
+    border: 1px solid #000;
+    margin:  10px;
+    padding: 10px;
+}
+
+.modal-main-row{
+    margin: 0;
+}
+.modal-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-img{
+    background: #D8DEDC;
+    width: 100%;
+    height: 750px;
+    margin: 0;
+    padding: 0;
+}
+.modal-img img{
+    /* width: 350px;
+    height: 750px;
+    padding: 0; */
+
+        /* width: 300px;
+    height: 650px; */
+    width: 300px;
+    height: 550px;
+    margin: 40px 20px;
+  
+}
+.modal-wrap{
+    padding: 20px;
+}
+.modal-content-border{
+    border-bottom: 1px solid #939B9E;
+    margin-bottom: 15px;
+}
+
+.modal-content-img{
+ margin-bottom: 50px;
+}
+.modal-content-inner h3{
+    font-weight: 500;
+font-size: 24px;
+line-height: 34px;
+color: #444444;
+
+
+}
+.modal-content-img1{
+    background: #D1B9B7;
+      width: 100px;
+    height: 100px;
+}
+.modal-content-img2{
+    background: #07897F;
+      width: 100px;
+    height: 100px;
+}
+.modal-content-img3{
+    background: #D0CACE;
+      width: 100px;
+    height: 100px;
+}
+.modal-content-img4{
+    background: #CBC7C5;
+      width: 100px;
+    height: 100px;
+}
+.modal-content-img {
+   width: 100px;
+    height: 100px;
+
+}
+.modal-content-img img{
+    width: 100px;
+    height: 100px;
+
+}
+
+.modal-content-inner .pera{
+    font-family: Poppins;
+    font-size: 12px;
+line-height: 20px;
+color: #939B9E;
+margin-bottom: 10px;
+}
+.modal-offer span{
+    font-weight: 600;
+font-size: 12px;
+color: #444444;
+margin-right: 5px;
+margin-bottom: 10px;
+}
+.modal-offer span del{
+    color: #939B9E;
+}
+
+.modal-rating span{
+    font-size: 12px;
+}
+.modal-rating .yellow{
+    color: #FFB31F;
+}
+.modal-rating{
+    margin-bottom: 10px;
+}
+.modal-btn-holder .modal-btn1{
+    background: #E3E3E3;
+border-radius: 5px;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+margin-bottom:10px;
+padding: 6px 20px;
+margin-right: 8px;
+color: #111;
+}
+.modal-cart-innr span h4{
+    font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+color: #444444;
+margin-bottom: 10px;
+margin-right: 30px;
+}
+.modal-cart-innr span h4 span{
+    font-weight: 600;
+}
+.modal-cart-innr .liner{
+    position: relative;
+}
+
+.modal-cart-innr .liner::before{
+    position: absolute;
+    content: " ";
+    width: 2px;
+    height: 22px;
+    background: #939B9E;
+        top: 4%;
+    right: 13px;
+}
+.modal-cart-innr p{
+    font-size: 12px;
+line-height: 19px;
+font-family: Roboto;
+color: #000000;
+}
+
+.modal-clr .clr1, .clr2, .clr3, .clr4{
+width: 16px;
+height: 16px;
+background: #000;
+border-radius: 50%;
+margin: 10px 0;
+}
+.modal-clr .clr2 {
+   background: #476B69;
+
+}
+.modal-clr .clr3 {
+   background: #C4C4C4;
+
+}
+.modal-clr .clr4 {
+    background: #F9EEEE;
+
+}
+
+
+
+
+.modal-cart-innr h5.clr{
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 19px;
+color: #000000!important;
+margin-bottom: 10px;
+
+}
+
+.cart-add-btn-holder .cart-select{
+    width: 100px;
+    height: 30px;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+.cart-add-btn-holder .heart{
+    background: var(--primary);
+    border-radius: 50%;
+    font-size: 14px;
+    color: #fff;
+    padding: 4px 8px;
+    text-align: center;
+       margin-right: 5px;
+       margin-bottom: 10px;
+
+}
+
+.cart-add-btn-holder .cart-btn{
+    background: var(--primary);
+   font-family: Roboto;
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 17px;
+display: flex;
+align-items: center;
+color: #FFFFFF;
+padding: 6px 20px;
+border-radius: 5px;
+   margin-right: 5px;
+   margin-bottom: 10px;
+
+}
+
+
+@media(max-width:992px){
+    /* .modal-syle-img{
+        display: none;
+    } */
+    .modal-img img{
+        width: 250px;
+        height: 350px;
+        padding: 20px;
+
+    }
+}
+
+@media(max-width:576px){
+    .modal-content-img{
+ margin-bottom: 20px;
+}
+}
 
 /* 
 ---------------------------------------------------------------------------------------------------------
