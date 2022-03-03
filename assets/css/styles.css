@@ -4702,7 +4702,20 @@ color: #444444;
     height: 100px;
 
 }
+.xzoom-gallery5{
+    margin: 30px 10px;
+    width: 100px;
+    height: 100px;
+}
 
+.modal-details-holder .modal-details-btn{
+    background: var(--primary);
+    color: #fff;
+    padding: 8px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+}
 .modal-content-inner .pera{
     font-family: Poppins;
     font-size: 12px;
@@ -4922,13 +4935,27 @@ border-radius: 5px;
 .product-right .pro-group .product-tag {
     display: inline-flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 5px;
 }
 
+.social-icon a{
+    font-size: 20px;
+    padding: 5px;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
 .product-tag .product-tags a {
     color: #000000;
-    font-size: 14px;
+    font-size: 16px;
     padding-right: 10px;
+    font-weight: 600;
+}
+.fur-list-inner  {
+    margin-bottom: 20px;
+    /* border-bottom: 1px solid #d1d1d1; */
+}
+.fur-list-inner p {
+    margin-bottom: 10px;
 }
 
 .product-right .pro-group .product-social li a {
@@ -5048,11 +5075,73 @@ border-radius: 5px;
     z-index: 1;
 }
 
-.recommende-text {
+/* .recommende-text {
     border-bottom: 0.5px solid #939B9E;
     ;
+} */
+.recommended-For-you .card-body-innr2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.recommended-For-you  .card-body-innr h5.recom-h5{
+   
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 20px!important;
+line-height: 23px;
+text-transform: capitalize;
+
+color: #000000;
+}
+.recommended-For-you  .card-body-innr span{
+   
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 23px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+color: #000000;
+margin-bottom: 10px;
+}
+.recommended-For-you p{
+    margin-bottom: 10px;
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 25px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+
+color: #000000;
 }
 
+.see-btn-holder .see-btn{
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-decoration-line: underline;
+text-transform: capitalize;
+
+color: #000000;
+margin-bottom: 20px;
+}
 .recommended-For-you .recommended-item {
     background: #ffff;
 }
